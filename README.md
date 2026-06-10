@@ -136,61 +136,9 @@ background:#111;
 <img src="https://images.unsplash.com/photo-1508098682722-e99c643e7f52">
 <h3>Training Kit</h3>
 <p>$40</p>
-<button class="btn" onclick="add('Training Kit - $40')">Add to Cart</button>
-</div>
-
-</div>
-</div>
-
-<div class="section cart">
-<h2>🛒 Your Cart</h2>
-
-<ul id="cart"></ul>
-
-<input type="text" id="name" placeholder="Your Name">
-<input type="text" id="phone" placeholder="Phone Number">
-
-<br>
-
-<button class="btn" onclick="order()">Send Order to Telegram</button>
-</div>
-
-<footer>
-© 2026 Feygo Sport Shop • All rights reserved
-</footer>
-
-<script>
-let cart = [];
-
-function add(item){
-cart.push(item);
-render();
-}
-
-function render(){
-let list = document.getElementById("cart");
-list.innerHTML = "";
-
-cart.forEach(i=>{
-let li = document.createElement("li");
-li.textContent = i;
-list.appendChild(li);
-});
-}
-
-function order(){
-let name = document.getElementById("name").value;
-let phone = document.getElementById("phone").value;
-
+<bu
 let message =
-"⚽ New Feygo Order%0A%0A" +
-"👤 Name: " + name + "%0A" +
-"📞 Phone: " + phone + "%0A%0A" +
-"🛒 Items:%0A" + cart.join("%0A");
-
-window.open("https://t.me/feygogv?text=" + message, "_blank");
-}
-</script>
+"⚽ New Fey
 
 </body>
 </html>
